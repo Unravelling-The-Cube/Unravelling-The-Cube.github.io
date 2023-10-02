@@ -1,4 +1,9 @@
-# Rules & Guidelines Terms
+---
+layout: page
+title: Rules & Guidelines Terms
+permalink: /rules-and-guidelines/
+---
+
 A list of the rules and guidelines for participating in UTC Competitions!
 ## Basic Guidelines (StackMat or Timer)
 During the competition, you are expected to follow WCA Competition rules as accurately as possible. If you have a StackMat timer, we ask you to use it if possible. If not, don't worry! It is not required to compete! Just make sure your timer can measure to the hundredths place (XX:XX.XX).
