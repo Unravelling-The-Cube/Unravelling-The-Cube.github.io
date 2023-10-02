@@ -3,9 +3,6 @@ layout: page
 title: Unravelling The Cube Terms and Conditions
 permalink: /Terms-and-Conditions/
 ---
-# 
-
-****
 
 ### **Terms and Conditions for "Unravelling The Cube" Discord Cubing Competition:**
 
