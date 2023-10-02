@@ -1,11 +1,8 @@
 ---
 layout: page
-title: Privacy Policy
+title: Unravelling The Cube Privacy Policy
 permalink: /Privacy-Policy/
 ---
-
-
-# Unravelling The Cube Privacy Policy
 
 This Privacy Policy describes how The UTC Bot (hereinafter referred to as "the Bot") collects, uses, and protects your personal information when you interact with the Bot. By using the Bot, you consent to the practices outlined in this Privacy Policy.
 
