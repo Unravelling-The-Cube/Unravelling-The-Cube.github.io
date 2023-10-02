@@ -4,7 +4,6 @@ title: Privacy Policy
 permalink: /Privacy-Policy/
 ---
 
-# 
 
 # Unravelling The Cube Privacy Policy
 
