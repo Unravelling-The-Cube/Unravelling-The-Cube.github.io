@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: white;
   font: 18px/1.4 $helvetica;
-  color: $black;
+  color: black;
 }
 
 .container {
@@ -225,7 +225,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: white;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -243,7 +243,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid White;
 }
 
 .posts > .post:last-child {
@@ -254,9 +254,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid White;
     padding: 0.1em 1em;
-    color: $gray;
+    color: White;
     font-size: 22px;
     font-style: italic;
   }
@@ -273,9 +273,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid Black;
+  background-color: black;
 }
 
 footer {
