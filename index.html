@@ -2,8 +2,12 @@
 layout: default
 ---
 
+<div class="blog-header">
+  <h1>Blog</h1>
+</div>
+
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:2 %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -16,3 +20,50 @@ layout: default
     </article>
   {% endfor %}
 </div>
+---
+layout: default
+---
+
+<div class="carousel-container">
+  <div class="carousel-slide">
+    <p>"The best way to predict the future is to invent it." - Alan Kay</p>
+  </div>
+  <div class="carousel-slide">
+    <p>"It always seems impossible until it's done." - Nelson Mandela</p>
+  </div>
+  <div class="carousel-slide">
+    <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
+  </div>
+</div>
+
+<style>
+  .carousel-container {
+    background-color: black;
+    color: #f5c06a;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .carousel-slide {
+    display: none;
+  }
+
+  .carousel-slide.active {
+    display: block;
+  }
+</style>
+
+<script>
+  const slides = document.querySelectorAll('.carousel-slide');
+  let currentSlide = 0;
+
+  function showSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(showSlide, 3000);
+</script>
