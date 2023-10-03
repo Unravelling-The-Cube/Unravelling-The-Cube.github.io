@@ -3,7 +3,7 @@ layout: default
 ---
 <head>
   <!-- Preload background image -->
-  <link rel="preload" href="./Logo.png"/>
+  <link rel="preload" href="https://unravelling-the-cube.github.io/images/BG.png"/>
   </head>
 <div class="blog-header">
   <h1>Blog</h1>
@@ -36,17 +36,20 @@ layout: default
     <p>"The only way to do great work is to love what you do." - Steve Jobs</p>
   </div>
   <div class="carousel-buttons">
-    <button class="carousel-button" id="prev-button">Prev</button>
-    <button class="carousel-button" id="next-button">Next</button>
+    <button class="carousel-button" id="prev-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" fill="#f5c06a"/></svg>
+    </button>
+    <button class="carousel-button" id="next-button">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="24px" height="24px"><path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12l-4.58 4.59z" fill="#f5c06a"/></svg>
+    </button>
   </div>
 </div>
 
 <style>
   .carousel-container {
-    background-color: black;
     color: #f5c06a;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     position: relative;
@@ -72,19 +75,31 @@ layout: default
   .carousel-buttons {
     position: absolute;
     bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
   }
 
   .carousel-button {
-    background-color: #f5c06a;
-    color: black;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     margin: 0 10px;
     cursor: pointer;
     font-size: 16px;
-    border-radius: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .carousel-button:hover {
+    transform: scale(1.1);
+  }
+
+  .carousel-button svg {
+    fill: black;
   }
 </style>
 
