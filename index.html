@@ -54,6 +54,11 @@ layout: default
     text-align: center;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
   }
 
   .carousel-slide {
@@ -100,6 +105,24 @@ layout: default
 
   .carousel-button svg {
     fill: black;
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: auto;
+    }
+    .carousel-slide {
+      position: relative;
+      opacity: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      max-width: 100%;
+      height: auto;
+    }
   }
 </style>
 
